@@ -1,0 +1,200 @@
+                                                                     Assignment no 5
+
+Aim :-  Getting started with R installation R objects and basic statistics
+
+library(readr)
+
+#read tha csv file
+
+crop_production111 <- read.csv("crop_production111.csv")
+
+View(crop_production111)
+
+# read the datasets in row and column wise  
+
+print(is.data.frame(crop_production111))
+
+print(ncol(crop_production111))
+
+print(nrow(crop_production111))
+
+# read the datasets in header value 6
+
+head(crop_production111)
+
+#max value of column year
+
+max(crop_production111$Year,na.rm = TRUE)
+
+#min value of column year
+
+min(crop_production111$Year,na.rm = TRUE)
+
+#mean of the column year
+
+mean(crop_production111$Year,na.rm = TRUE)
+
+# create a one cr variable to store the datasets summary information
+
+cr<-crop_production111
+
+print(cr)
+
+Output :- 
+
+library(readr)
+
+> #read tha csv file
+
+> crop_production111 <- read.csv("crop_production111.csv")
+
+> View(crop_production111)
+
+> # read the datasets in row and column wise  
+
+> print(is.data.frame(crop_production111))
+
+[1] TRUE
+
+> print(ncol(crop_production111))
+
+[1] 7
+
+> print(nrow(crop_production111))
+
+[1] 473
+
+> # read the datasets in header value 6
+
+> head(crop_production111)
+
+        State  Districts Year      Season              Crop   Area Production
+
+1 Maharashtra AHMEDNAGAR 2010 Kharif              Arhar/Tur  17600      11300
+
+2 Maharashtra AHMEDNAGAR 2010 Kharif                  Bajra 196000     186800
+
+3 Maharashtra AHMEDNAGAR 2010 Kharif           Cotton(lint) 101700     221100
+
+4 Maharashtra AHMEDNAGAR 2010 Kharif              Groundnut   4200       3600
+
+5 Maharashtra AHMEDNAGAR 2010 Kharif                  Maize  45300     139500
+
+6 Maharashtra AHMEDNAGAR 2010 Kharif      Moong(Green Gram)  15900      12400
+
+> 
+
+> #max value of column year
+
+> max(crop_production111$Year,na.rm = TRUE)
+
+[1] 2014
+
+> 
+
+> #min value of column year
+
+> min(crop_production111$Year,na.rm = TRUE)
+
+[1] 2010
+
+> 
+
+> #mean of the column year
+
+> mean(crop_production111$Year,na.rm = TRUE)
+
+[1] 2011.865
+
+> 
+
+> # create a one cr variable to store the datasets summary information
+
+> cr<-crop_production111
+
+> print(cr)
+
+          State  Districts Year      Season                Crop   Area
+
+1   Maharashtra AHMEDNAGAR 2010 Kharif                Arhar/Tur  17600
+
+2   Maharashtra AHMEDNAGAR 2010 Kharif                    Bajra 196000
+
+3   Maharashtra AHMEDNAGAR 2010 Kharif             Cotton(lint) 101700
+
+4   Maharashtra AHMEDNAGAR 2010 Kharif                Groundnut   4200
+
+5   Maharashtra AHMEDNAGAR 2010 Kharif                    Maize  45300
+
+6   Maharashtra AHMEDNAGAR 2010 Kharif        Moong(Green Gram)  15900
+
+7   Maharashtra AHMEDNAGAR 2010 Kharif               Niger seed   1900
+
+8   Maharashtra AHMEDNAGAR 2010 Kharif                     Ragi   2800
+
+9   Maharashtra AHMEDNAGAR 2010 Kharif                     Rice   7500
+
+10  Maharashtra AHMEDNAGAR 2010 Kharif                  Sesamum    500
+
+11  Maharashtra AHMEDNAGAR 2010 Kharif                 Soyabean  50700
+
+12  Maharashtra AHMEDNAGAR 2010 Kharif                Sugarcane 126000
+
+13  Maharashtra AHMEDNAGAR 2010 Kharif                Sunflower   8200
+
+14  Maharashtra AHMEDNAGAR 2010 Kharif                     Urad  12100
+
+15  Maharashtra AHMEDNAGAR 2010 Rabi                       Gram 115200
+
+16  Maharashtra AHMEDNAGAR 2010 Rabi                      Jowar 540000
+
+17  Maharashtra AHMEDNAGAR 2010 Rabi                    Linseed    500
+
+18  Maharashtra AHMEDNAGAR 2010 Rabi                      Maize  13200
+
+19  Maharashtra AHMEDNAGAR 2010 Rabi                  Safflower   8800
+
+20  Maharashtra AHMEDNAGAR 2010 Rabi                    Sesamum    100
+
+    Production
+
+1        11300
+
+2       186800
+
+3       221100
+
+4         3600
+
+5       139500
+
+6        12400
+
+7          700
+
+8         2600
+
+9         7000
+
+10         100
+
+11       90800
+
+12    11516400
+
+13        3400
+
+14        7700
+
+15       94000
+
+16      318000
+
+17         100
+
+18       26300
+
+19        5300
+
+20          30
+
